@@ -84,7 +84,7 @@
 				var materials = [ ];
 				var textureLoader = new THREE.TextureLoader();
 				for ( let i = 1; i <= 6; i++ ) {
-					var texture = textureLoader.load( 'https://github.com/uakovlev741/playing_cube/textures/' + String(i) + '.png' );
+					var texture = textureLoader.load( 'https://uakovlev741.github.io/playing_cube/textures/' + String(i) + '.png' );
 					var material = new THREE.MeshPhongMaterial({ map: texture });
   					materials.push(material);
 				}
@@ -94,7 +94,7 @@
 				Cube.position.y = 100;
 				scene.add( Cube );
 
-				var texture = textureLoader.load( 'https://github.com/uakovlev741/playing_cube/textures/Sillitoe-black.png' );
+				var texture = textureLoader.load( 'https://uakovlev741.github.io/playing_cube/textures/Sillitoe-black.png' );
 				texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 				texture.anisotropy = 16;
 				texture.repeat.set( 4, 4 );
@@ -150,3 +150,4 @@
 	</body>
 
 </html>
+
